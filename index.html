@@ -7,54 +7,56 @@
     <style>
         :root { --primary-color: #d35400; }
         body { font-family: 'Arial', sans-serif; margin: 0; background-color: #fffaf0; line-height: 1.8; color: #333; }
-        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), #d35400; padding: 50px 20px; text-align: center; color: white; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), #d35400; padding: 40px 20px; text-align: center; color: white; }
+        
+        /* आपकी फोटो का स्टाइल */
+        .profile-photo { width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; margin-bottom: 15px; object-fit: cover; }
+        
         .container { max-width: 800px; margin: auto; padding: 20px; }
-        .card { background: white; padding: 25px; margin-bottom: 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        h2 { color: var(--primary-color); border-bottom: 2px solid var(--primary-color); display: inline-block; }
+        .card { background: white; padding: 25px; margin-bottom: 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; }
+        h2 { color: var(--primary-color); border-bottom: 2px solid var(--primary-color); display: inline-block; margin-bottom: 15px; }
         .btn { display: inline-block; padding: 15px 30px; background: #25d366; color: white; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 15px; font-size: 18px; }
-        .upload-area { border: 2px dashed var(--primary-color); padding: 25px; text-align: center; border-radius: 10px; margin-top: 10px; }
-        input, textarea { width: 95%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; font-size: 16px; }
-        .submit-btn { background: var(--primary-color); color: white; border: none; padding: 15px; width: 100%; cursor: pointer; border-radius: 8px; font-size: 18px; font-weight: bold; }
+        .upload-area { border: 2px dashed var(--primary-color); padding: 20px; border-radius: 10px; margin-top: 10px; }
+        input, textarea { width: 90%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; font-size: 16px; }
+        .submit-btn { background: var(--primary-color); color: white; border: none; padding: 15px; width: 92%; cursor: pointer; border-radius: 8px; font-size: 18px; font-weight: bold; }
     </style>
 </head>
 <body>
 
 <div class="hero">
-    <h1>🙏 पंडित अर्पित तिवारी 🙏</h1>
+    <!-- यहाँ अपनी फोटो लगाएँ -->
+    <img src="YOUR_PHOTO_LINK_HERE" alt="पंडित अर्पित तिवारी" class="profile-photo">
+    <h1>पंडित अर्पित तिवारी</h1>
     <p>वैदिक पूजा, पाठ, कथा एवं धार्मिक संस्कार</p>
     <a href="https://wa.me/919118991503?text=नमस्ते पंडित जी, मुझे पूजा के संबंध में जानकारी चाहिए।" class="btn">WhatsApp पर अभी बात करें</a>
 </div>
 
 <div class="container">
     <div class="card">
-        <h2>पंडित अर्पित तिवारी के बारे में</h2>
-        <p>मैं पंडित अर्पित तिवारी, सेंट्रल संस्कृत यूनिवर्सिटी, लखनऊ कैंपस का विद्यार्थी हूँ। मैं वैदिक परंपरा एवं शास्त्रसम्मत विधि से सभी प्रकार के धार्मिक अनुष्ठान, पूजा, पाठ एवं संस्कार संपन्न कराता हूँ।</p>
+        <h2>मेरे बारे में</h2>
+        <p style="text-align: justify;">मैं पंडित अर्पित तिवारी, सेंट्रल संस्कृत यूनिवर्सिटी, लखनऊ कैंपस का विद्यार्थी हूँ। मैं वैदिक परंपरा एवं शास्त्रसम्मत विधि से सभी प्रकार के धार्मिक अनुष्ठान, पूजा, पाठ एवं संस्कार संपन्न कराता हूँ। मेरी पूरी कोशिश होती है कि सनातन धर्म की मर्यादा के अनुसार कार्य हो।</p>
     </div>
 
     <div class="card">
         <h2>हमारी मुख्य सेवाएं</h2>
-        <p>• सत्यनारायण व्रत कथा एवं सुंदरकांड पाठ</p>
-        <p>• रुद्राभिषेक एवं महामृत्युंजय जाप</p>
-        <p>• गृह प्रवेश एवं वास्तु शांति पूजन</p>
-        <p>• विवाह, नामकरण एवं यज्ञोपवीत संस्कार</p>
-        <p>• सभी प्रकार के वैदिक हवन एवं अनुष्ठान</p>
+        <p>सत्यनारायण कथा | रुद्राभिषेक | गृह प्रवेश | वास्तु शांति | विवाह | नामकरण | हवन</p>
     </div>
 
     <div class="card">
-        <h2>पूजा की फोटो अपलोड करें</h2>
+        <h2>हमारी गैलरी (पूजा की फोटो)</h2>
         <div class="upload-area">
-            <p>यहाँ आप अपने द्वारा कराए गए अनुष्ठान की फोटो जोड़ सकते हैं:</p>
+            <p>यहाँ आप अपने द्वारा कराए गए अनुष्ठानों की तस्वीरें देख सकते हैं:</p>
             <input type="file" multiple accept="image/*">
         </div>
     </div>
 
     <div class="card">
-        <h2>पूजा या अनुष्ठान के लिए बुकिंग</h2>
+        <h2>पूजा या अनुष्ठान के लिए संपर्क करें</h2>
         <form id="bookingForm">
-            <input type="text" placeholder="अपना पूरा नाम लिखें" required>
-            <input type="tel" placeholder="अपना मोबाइल नंबर" required>
-            <textarea placeholder="आपको कौन सी पूजा करवानी है और किस तारीख को?" required></textarea>
-            <button type="submit" class="submit-btn">अपना बुकिंग अनुरोध भेजें</button>
+            <input type="text" placeholder="आपका नाम" required>
+            <input type="tel" placeholder="मोबाइल नंबर" required>
+            <textarea placeholder="कौन सी पूजा और कब करवानी है?" required></textarea>
+            <button type="submit" class="submit-btn">संपर्क करें</button>
         </form>
     </div>
 </div>
@@ -62,7 +64,7 @@
 <script>
     document.getElementById('bookingForm').onsubmit = function(e) {
         e.preventDefault();
-        alert("धन्यवाद! आपका बुकिंग अनुरोध हमें मिल गया है। हम जल्द ही आपसे संपर्क करेंगे।");
+        alert("धन्यवाद! आपका संदेश मिल गया है। हम जल्द ही आपसे संपर्क करेंगे।");
     };
 </script>
 
